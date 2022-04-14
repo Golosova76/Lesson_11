@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Barlow:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Taviraj:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Обнуление стилей */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+}
+
+/* ------------- */
+
+/* Общие стили */
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;    
+}
+
+.wrapper {
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+
+/* Главные блоки */
+
+.header__container {
+  width: 100%;
+  min-height: 80px;
+  background-color: #5D62B5;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 100;
+} 
+
+.main {
+  padding-top: 80px;
+}
+
+.main__photo {  
+  width: 100%;
+  min-height: 800px;
+  background: url("../img/Верхфон.png") center/cover no-repeat; 
+}
+
+.main__container {
+  max-width: 1020px;
+  margin: -80px auto 200px;
+}
+
+.who-we-are__container {  
+  border-radius: 40px;  
+  background-color: #5D62B5; 
+  position: relative;   
+}
+
+.who-we-are__container::before {
+  content: "";  
+  background: url("../img/Blob2.png") 0 0 no-repeat;
+  width: 514px;
+  height: 517px;
+  position: absolute;
+  z-index: 0;
+  bottom: -170px;
+  left: 50px;
+}  
+
+.who-we-are__container::after {
+  content: "";  
+  background: url("../img/circles.svg") 0 0 no-repeat;
+  width: 201px;
+  height: 317px;
+  position: absolute;
+  top: -109px;
+  right: -76px;
+}
+
+.who-we-are__block-header {
+  padding: 100px 350px 0px 87px;  
+  position: relative;
+}
+
+.block-header {
+  margin: 0px 0px 36px 0px;
+}
+
+.block-header__sub-title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #F5F5F5; 
+  padding: 0px 0px 0px 34px;   
+  margin: 0px 0px 33px 30px;
+  position: relative;
+}
+
+.block-header__sub-title::before {
+  content: "";  
+  background: url("../img/rhombus.svg") 0 0 no-repeat;
+  width: 24px;
+  height: 24px;  
+  position: absolute;  
+  top: -2px;
+  left: 0px;
+}
+
+.block-header__title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.17;
+  color: #FFFFFF; 
+}
+
+.who-we-are__text {
+  line-height: 1.5;
+  color: #F5F5F5;  
+  max-width: 846px;
+  margin: 0 auto 54px;
+}
+
+.who-we-are__img {      
+  max-width: 846px;  
+  margin: 0 auto;
+  position: relative;
+}
+
+.who-we-are__image {  
+  border-radius: 40px; 
+  margin-bottom: -120px; 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main__sticky {
+  max-width: 1020px;
+  margin: 0 auto 100px;
+  position: sticky;
+  top: 70px;
+}
+
+.sticky__container {
+  background-color: rosybrown;
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+}
+.main__static {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.main__static:not(:last-child) {
+  margin: 0px auto 100px;
+}
+
+.static__container {
+  background-color: aqua;
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
